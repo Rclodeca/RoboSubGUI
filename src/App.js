@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Mode from './components/mode/Mode.js';
 import MissionPlanner from './components/mission planner/MissionPlanner.js';
+import AHRS from './components/ahrs/AHRS.js';
 
 class App extends Component {
     constructor() {
@@ -25,7 +26,8 @@ class App extends Component {
                         <div className="col">
                             <div className="row">
                                 <div className="col">
-                                    AHRS Data
+                                    
+                                    <AHRS />
                                 </div>
                                 <div className="col">
                                     DVL Data
