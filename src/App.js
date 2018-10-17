@@ -1,28 +1,47 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Mode from './components/mode/Mode.js';
+import MissionPlanner from './components/mission planner/MissionPlanner.js';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    constructor() {
+        super();
+        this.state = {
+
+        }
+    }
+    render() {
+        const { currentMode } = this.state;
+        return (
+            <div className="App">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-2">
+                            <h2 className='m-4'>RoboSub GUI</h2>
+                            <Mode />
+                            <MissionPlanner />
+                            
+                        </div>
+                        <div className="col">
+                            <div className="row">
+                                <div className="col">
+                                    AHRS Data
+                                </div>
+                                <div className="col">
+                                    DVL Data
+                                </div>
+                            </div>
+                            <div className='row'>
+                                <div className="col">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }
 
 export default App;
