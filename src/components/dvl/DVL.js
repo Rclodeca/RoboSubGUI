@@ -1,12 +1,12 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import Chart from '../chart/Chart.js';
-import './ahrs.css'
+import './dvl.css'
 
 const North = "North";
 const East = "East";
 
-class AHRS extends React.Component {
+class DVL extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -32,4 +32,4 @@ class AHRS extends React.Component {
 }
 
 
-export default AHRS;
+export default DVL;

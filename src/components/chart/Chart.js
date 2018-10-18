@@ -18,7 +18,7 @@ const Chart = ({datapoints, direction}) => {
 		responsive: true,
 		title: {
 			display: true,
-			text: 'AHRS Data'
+			text: 'DVL Data'
 		},
 		tooltips: {
 			mode: 'index'

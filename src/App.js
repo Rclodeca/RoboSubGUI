@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Mode from './components/mode/Mode.js';
 import MissionPlanner from './components/mission planner/MissionPlanner.js';
-import AHRS from './components/ahrs/AHRS.js';
+import DVL from './components/dvl/DVL.js';
 
 class App extends Component {
     constructor() {
@@ -27,10 +27,10 @@ class App extends Component {
                             <div className="row">
                                 <div className="col">
                                     
-                                    <AHRS />
+                                    <DVL />
                                 </div>
                                 <div className="col">
-                                    DVL Data
+                                    AHRS Data
                                 </div>
                             </div>
                             <div className='row'>
